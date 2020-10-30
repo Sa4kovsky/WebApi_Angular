@@ -1,0 +1,12 @@
+<div *ngFor="let s of shopVinos">
+  <div class="card-container">
+    <div class="row">
+      <div class="col-xl-8" style="width:250px">
+        <h2>{{s?.title}}</h2>
+        <span >These last few weeks I have been working hard on a new brunch recipe for you all.</span>
+        <div>{{s?.cost}}€</div>
+      </div>
+      <div class="wrapper exmpl"><img src="{{s?.picture}}" alt="" /></div>
+    </div>
+  </div>
+</div>

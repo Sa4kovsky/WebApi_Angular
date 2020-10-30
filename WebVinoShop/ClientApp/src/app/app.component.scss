@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+// Heder
+header .container-fluid {
+  background-image: url('https://posudaguide.ru/wp-content/uploads/2019/04/Bokaly-i-butylka-s-vinom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 36px;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
+  }
+}
+
+.hamburger {
+  font-size: 2.3em;
+  color: #000;
+
+  :hover {
+    color: #FFF;
+    cursor: pointer;
+  }
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+
+  .logo {
+    width: 550px;
+    height: 350px;
+    background: url("/assets/img/InVino-PNG.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.btn-outline-danger {
+  color: white;
+  border: 0px;
+  border-radius: 50%;
+}
+
+
+// Footer
+footer {
+  background-color: rgba(36, 50, 59, 1);
+  padding-top: 2em;
+  padding-bottom: 1.2em;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p {
+  color: #FFFFFF;
+}
+
+.social {
+  padding-top: 50px;
+}

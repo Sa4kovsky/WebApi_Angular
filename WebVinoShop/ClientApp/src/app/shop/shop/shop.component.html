@@ -1,0 +1,26 @@
+<div>
+  <a routerLink="/create" class="nav-link">Добавить</a>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Cost</td>
+      <td>Picture</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of shopVinos">
+      <td>{{s.idShopVino}}</td>
+      <td>{{s.title}}</td>
+      <td>{{s.cost}}</td>
+      <td><a href="{{s.picture}}">ссылка</a></td>
+      <td>
+        <a [routerLink]="['/edit', s.idShopVino]" class="btn btn-sm btn-primary">Изменить</a>
+        <button (click)="delete(s.idShopVino)" class="btn btn-sm btn-danger">Удалить</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

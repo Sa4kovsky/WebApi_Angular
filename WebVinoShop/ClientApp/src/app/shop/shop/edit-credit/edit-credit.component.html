@@ -1,0 +1,8 @@
+<div *ngIf="loaded">
+  <h2>Изменение данных о товаре</h2>
+  <wine-form [(wine)]="wine"></wine-form>
+  <div class="wine-group">
+    <input type="button" value="Сохранить" (click)="save()" class="btn btn-success" />
+  </div>
+</div>
+<a routerLink="/shop-list" class="nav-link">Назад к списку</a>
